@@ -5,68 +5,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asset/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-    <title>Dekhi Studios</title>
+    <title>Dekhi Studio</title>
+    <script>
+        document.documentElement.classList.add('js');
+        setTimeout(() => document.documentElement.classList.remove('js'), 3500);
+    </script>
 </head>
 <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <header>
+        <div class="grid-container" data-aos="fade-down">
+            <h1>D</h1>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav id="site-nav" aria-label="Main">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" id="btn">LET'S TALK</button>
+            </nav>
+        </div>
+    </header>
     <section class="hero-section">
-        <header>
-            <div>DEKHI</div>
-            <div>About</div>
-            <div>Services</div>
-            <div>Portfolio</div>
-            <div class="consult">Consultation</div>
-        </header>
-        <div class="main-container">
-            <div class="headline">
-                <h1 data-aos="fade-up" data-aos-duration="900">DEKHI</h1>
-                <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">We design and develop modern websites that help businesses
-                    build trust, attract customers, and grow online.</p>
-                <button id="btn" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">START A PROJECT <span>→</span></button>
+        <div class="center">
+            <h1 data-aos="fade-up" data-aos-delay="150">DEKHI</h1>
+           <p data-aos="fade-up" data-aos-delay="500">
+            We design and develop modern websites that help businesses build trust, attract customers, and grow online.
+           </p>
+        </div>
+    </section>
+    <section class="work-section" id="work">
+        <div class="title">
+            <h2 data-aos="fade-up">Work we're proud of.</h2>
+            <h3 data-aos="fade-up" data-aos-delay="100">Selected Work(02)</h3>
+        </div>
+        <div class="works">
+            <div class="work" id="brew">
+                <div class="image" data-aos="fade-up">
+                    <div class="box"></div>
+                </div>
+                <div class="info" data-aos="fade-up" data-aos-delay="100">
+                    <div class="name">
+                        <h1>BREW</h1>
+                        <p>Brand and website for a coffee shop.</p>
+                    </div>
+                    <span class="ar" aria-hidden="true">&nearr;</span>
+                </div>
+            </div>
+            <div class="work" id="wls">
+                <div class="image" data-aos="fade-up" data-aos-delay="150">
+                    <div class="box"></div>
+                </div>
+                <div class="info" data-aos="fade-up" data-aos-delay="250">
+                      <div class="name">
+                        <h1>Weird.Fish.Lab</h1>
+                        <p>Brand and online store for a streetwear label.</p>
+                    </div>
+                    <span class="ar" aria-hidden="true">&nearr;</span>
+                </div>
             </div>
         </div>
     </section>
-    <section class="about">
-        <div class="para">
-            <p data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-out">
-                We design and develop websites that combine
-                thoughtful design, clean development, and
-                lasting digital experiences.
-            </p>
+    <section class="service-section" id="services">
+        <div class="text">
+            <h1 data-aos="fade-up">Services</h1>
+            <div class="para" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                    Websites designed and coded by
+                    hand, built to load fast and work on
+                    any device.
+                </p>
+                <div class="skill">
+                    <div class="box" id="html">HTML</div>
+                    <div class="box" id="css">CSS</div>
+                    <div class="box" id="javascript">JAVASCRIPT</div>
+                </div>
+            </div>
+            <div class="buttons" data-aos="fade-up" data-aos-delay="200">
+                <p>OPEN FOR NEW PROJECTS</p>
+                <button class="btn">START A PROJECT</button>
+            </div>
         </div>
-    </section>
-    <section class="service">
-        <div class="title"><h1>Services</h1></div>
         <div class="services">
-            <div class="service-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
-                <div class="text">
-                    <h2>01</h2>
-                    <h1>Web Design</h1>
+            <div class="box">
+                <div class="name" data-aos="fade-up" data-aos-delay="0">
+                    <h3>01</h3>
+                    <h2>Web Design</h2>
                 </div>
-                <p>Thoughtful interfaces built for clarity.</p>
+                <p data-aos="fade-up" data-aos-delay="100">Clean, thoughtful interfaces tailored to each brand, with a focus on usability and visual identity.</p>
             </div>
-            <div class="service-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
-                <div class="text">
-                    <h2>02</h2>
-                    <h1>Web Development</h1>
+            <div class="box">
+                <div class="name" data-aos="fade-up" data-aos-delay="100">
+                    <h3>02</h3>
+                    <h2>Web Development</h2>
                 </div>
-                <p>Fast, responsive websites built to last</p>
+                <p data-aos="fade-up" data-aos-delay="200">Custom-coded, responsive websites built for performance, accessibility, and reliability.</p>
             </div>
-            <div class="service-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
-                <div class="text">
-                    <h2>03</h2>
-                    <h1>Landing Page</h1>
+            <div class="box">
+                <div class="name" data-aos="fade-up" data-aos-delay="200">
+                    <h3>03</h3>
+                    <h2>Landing Pages</h2>
                 </div>
-                <p>Pages designed to convert visitors.</p>
+                <p data-aos="fade-up" data-aos-delay="300">Focused pages designed to promote a producd, launch a business, or turn visitors into customers.</p>
             </div>
-            <div class="service-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
-                <div class="text">
-                    <h2>04</h2>
-                    <h1>Web Maintenance</h1>
+            <div class="box" id="box4">
+                <div class="name" data-aos="fade-up" data-aos-delay="300">
+                    <h3>04</h3>
+                    <h2>Website Maintenance</h2>
                 </div>
-                <p>Ongoing updates and technical support.</p>
+                <p data-aos="fade-up" data-aos-delay="400">Ongoing updates, bug fixes, and technical support to keep websites running smoothly.</p>
             </div>
         </div>
     </section>
+    <section class="about-section" id="about">
+        <div class="about-heading">
+            <div class="center">
+                <h1 data-aos="fade-right" data-aos-delay="0">Small team.</h1>
+                <h1 id="text" data-aos="fade-right" data-aos-delay="150">Unusual ideas.</h1>
+                <h1 data-aos="fade-right" data-aos-delay="300">Built for the web.</h1>
+            </div>
+        </div>
+        <div class="about">
+            <div class="box2" data-aos="fade-up">
+                <span class="star" aria-hidden="true">*</span>
+                <p>Independent creative studio</p>
+            </div>
+            <div class="about-para" data-aos="fade-up" data-aos-delay="150">
+                <p>
+                    We're a small creative studio building custom websites that combine distintive design with thoughtful development.
+                    <br>
+                    We care about the details, the experience and the code behind every project.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <div class="info">
+            <h1 data-aos="fade-right">Let's talk.</h1>
+            <div class="email" data-aos="fade-right" data-aos-delay="150">
+                <h2><a href="mailto:dekhistudio2025@gmail.com">dekhistudio2025@gmail.com</a></h2>
+                <p>
+                    BASED IN DHAKA, BANGLADESH
+                    <br>
+                    REPLIES WITHIN 1 TO 2 WORKING DAYS
+                </p>
+            </div>
+        </div>
+        <form class="contact-form" name="contact" method="post" data-aos="fade-left">
+            <input type="hidden" name="form-name" value="contact">
+            <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+
+            <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" placeholder="Your name" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+
+            <fieldset class="chips">
+                <legend>What do you need?</legend>
+                <input type="radio" id="t1" name="type" value="Website" checked><label for="t1">Website</label>
+                <input type="radio" id="t2" name="type" value="E-commerce"><label for="t2">E-commerce</label>
+                <input type="radio" id="t3" name="type" value="Landing page"><label for="t3">Landing page</label>
+                <input type="radio" id="t4" name="type" value="Maintenance"><label for="t4">Maintenance</label>
+            </fieldset>
+
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="4" placeholder="Tell us a bit about the project" required></textarea>
+            </div>
+
+            <button class="send-button" type="submit">SEND MESSAGE</button>
+        </form>
+    </section>
+    <footer>
+        <div class="links" data-aos="fade-up">
+            <div class="footer-title">
+                <p class="label">DEKHI STUDIOS</p>
+                <span>A small studio building custom websites from Dhaka.</span>
+            </div>
+            <nav class="footer-navigate">
+                <p class="label">Navigate</p>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer-socials">
+                <p class="label">SOCIALS</p>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Linkedln</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-email">
+                <p class="label">SAY HELLO</p>
+                <span>
+                    <a href="#">dekhistudio2025@gmail.com</a>
+                    <br>
+                    Dhaka,Bangladesh
+                </span>
+            </div>
+        </div>
+        <div class="title-footer" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <span>DEKHI</span>
+        </div>
+        <div class="footer-bar">
+            <span>&copy; <span id="year">2026</span>DEKHI</span>
+            <a href="#top">&uarr; Back to top</a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="./backend/index.js"></script>
 </body>
