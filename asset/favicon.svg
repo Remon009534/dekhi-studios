@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- hard black shadow: the same D, moved down and right -->
+  <path transform="translate(6 6)"
+        fill="#171717" stroke="#171717" stroke-width="4" fill-rule="evenodd"
+        d="M8 6H28C42 6 52 14 52 30S42 54 28 54H8ZM20 17V43H27C35 43 40 38 40 30S35 17 27 17Z"/>
+  <!-- the orange D with a black outline -->
+  <path fill="#F05A28" stroke="#171717" stroke-width="4" fill-rule="evenodd"
+        d="M8 6H28C42 6 52 14 52 30S42 54 28 54H8ZM20 17V43H27C35 43 40 38 40 30S35 17 27 17Z"/>
+</svg>
